@@ -1,0 +1,89 @@
+@import "bootstrap/bootstrap";
+
+body{
+    font-size: 16px;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: #f9eeff;
+    margin: 0;
+    box-sizing: border-box;
+    color: #2f1533;
+}
+
+.image{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.col {
+    background: white;
+    padding: 1.3rem 2.4rem;
+    border-radius: 18px;
+    margin-top: 13.3rem;
+    z-index: 1;
+    box-shadow: 0px 0px 4px 0px #d0cccc;
+}
+
+@media (max-width: 50000px){
+    .container {
+      max-width: 550px;
+    }
+  }
+
+.container {
+    @include media-breakpoint-down(sm){
+        max-width: 375px;
+    }
+}
+
+.accordion{
+  --bs-accordion-border-color: white;
+  --bs-accordion-active-bg: white;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-border-color: none;
+  --bs-accordion-border-width: none;
+  --bs-accordion-border-radius: none;
+  --bs-accordion-inner-border-radius: none;
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='31' fill='none' viewBox='0 0 30 31'%3E%3Cpath fill='%23AD28EB' d='M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z'/%3E%3C/svg%3E") !important;
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='31' fill='none' viewBox='0 0 30 31'%3E%3Cpath fill='%23301534' d='M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z'/%3E%3C/svg%3E");
+}
+
+.faq{
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+
+    & > img{
+        width: 30px;
+        margin-right: 1.05rem;
+    }
+
+    & > h1{
+        margin-bottom: 0;
+        font-size: 2.5rem;
+    }
+}
+
+.accordion-button{
+    font-weight: 600;
+    padding: var(--bs-accordion-btn-padding-y) 0;
+
+    &:hover{
+        color: #ad28eb;
+    }
+}
+
+.accordion-body{
+    color: #8c6991;
+}
+
+.accordion-item{
+    
+    &:not(:last-child){
+    border-bottom: 1px solid #7d7d7d0f;
+    }
+}
